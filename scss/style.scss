@@ -1,0 +1,76 @@
+//foundation
+@import 'foundation/reset';
+@import 'foundation/fonts';
+@import 'foundation/base';
+
+//layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/layout';
+
+//component
+@import 'object/component/btn';
+@import 'object/component/title';
+@import 'object/project/card-activity';
+@import 'object/project/card-bloc';
+@import 'object/project/mainvisual';
+
+
+
+
+
+
+
+
+// .l-header{
+//     background-image: url('../img/background.png');
+//     background-size: 100%,100%;
+//     height: 1080px;
+//     position: fixed;
+//     &__list{
+//         display: flex;
+//         a{
+//             width: 50px;
+//             height: 50px;
+//         }
+//         nav ul{
+//         display: flex;
+//         width: 793px;
+//         height: 27px;
+//         list-style-type: none;
+//         border: #E76F51;
+//             a{
+//             font-family: 'Roboto', sans-serif;
+//             font-size: 18px;
+//             text-align: center;
+//             padding: 10px;
+//             text-decoration: none;
+//             color: #D2D2D2;
+//             }
+//         }
+//             }
+//         &__content{
+//             text-align: center;
+//             h2{
+//                 font-family: 'Archivo', sans-serif;
+//                 font-weight: 900;
+//                 font-size: 81px;
+//                 color: #FFFFFF;
+//             }
+//             p{
+//                 font-family: 'Roboto', sans-serif;
+//                 font-size: 18px;
+//                 color: #FFFFFF;
+//             }
+//             .c-btn--discover{
+//                 background-color: #E76F51;
+//                 a{
+//                     font-family: 'Roboto', sans-serif;
+//                     font-weight: 500;
+//                     font-size: 18px;
+//                     text-decoration: none;
+//                     color: #FFFFFF;
+//                 }
+//             }
+//         }
+// }

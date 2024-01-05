@@ -1,0 +1,43 @@
+.c-btn{
+    width: 130px;
+
+    a{
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        border-radius: 25px;
+        font-weight: 500;
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        color: #fff;
+        justify-content: center;
+    }
+    &--signup{
+       a{
+        border: 0;
+       }
+    }
+    &--discover{
+        width: 205px;
+        margin: 0 auto;
+        a{
+            background-color: #E76F51;
+        }
+    }
+}
+
+
+
+
+// .c-btn--discover{
+//                     background-color: #E76F51;
+//                     max-width: 205px;
+//                     a{
+//                         font-family: 'Roboto', sans-serif;
+//                         font-weight: 500;
+//                         font-size: 18px;
+//                         text-decoration: none;
+//                         color: #FFFFFF;
+//                     }
+//                 }

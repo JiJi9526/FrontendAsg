@@ -1,0 +1,43 @@
+.p-bloc--service{
+    margin: -130px 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    .card-bloc{
+        width: 347px;
+        background: #fff;
+        border-radius: 20px;
+        margin-left: 25px;
+    &:last-child{
+        margin-right: 0px;
+    }
+    &__inner{
+        padding:  40px 20px;
+    }
+    .img-box{
+        display: flex;
+        align-items: center;
+        img{
+            max-width: 100%;
+            width: auto;
+            margin: 0 auto;
+        }
+        
+    }
+    .text-box{
+        text-align: center;
+        h3{
+            font-family: 'Archivo', sans-serif;
+            font-size: 18px;
+            line-height: 28px;
+        }
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 400;
+        }
+    }
+}
+}
