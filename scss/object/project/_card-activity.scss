@@ -1,0 +1,81 @@
+.p-bloc--activity{
+    margin-bottom: 30px;
+    .activity-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        .card-bloc{
+            width: calc(100% / 4 - 18px);
+            margin: 0 18px 18px 0;
+            background: #fff;
+            border-radius: 20px;
+
+            &__inner{
+                padding: 50px 30px;
+            }
+            
+            .img-box {
+                position: relative;
+          
+                .select {
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 14px;
+                  background-color: #fff;
+                  position: absolute;
+                  top: 20px;
+                  right: 20px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+          
+                  a {
+                    display: block;
+                    background-image: url(../../../img/favbtn/fav.png);
+                    background-size: 100% 100%;
+                    width: 20px;
+                    height: 20px;
+          
+                    &:hover {
+                      background-image: url(../../../img/favbtn/favhover.png);
+                    }
+                  }
+                }
+              }
+
+              
+            .text-box{
+                text-align: center;
+                .price{
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    width: 145px;
+                    margin: -25px auto 0;
+                    border-radius: 14px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #fff;
+                    position: relative;
+                    color: #e76f51;
+                }
+                h3{
+                    font-family: 'Archivo Black', sans-serif;
+                    font-size: 18px;
+                    line-height: 28px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: 400;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

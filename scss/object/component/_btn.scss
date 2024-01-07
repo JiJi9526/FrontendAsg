@@ -6,12 +6,13 @@
         box-sizing: border-box;
         border-radius: 25px;
         font-weight: 500;
-        text-align: center;
         width: 100%;
         height: 50px;
         align-items: center;
         color: #fff;
+        text-align: center;
         justify-content: center;
+        display: flex;
     }
     &--signup{
        a{
@@ -25,19 +26,25 @@
             background-color: #E76F51;
         }
     }
+    &--more{
+        margin: 0 auto;
+        width: 185px;
+        height: 50px;
+        a{
+            color: #8d8d8d;
+            background: rgba(141, 141, 141, .1);
+            border: none;
+        }
+    }
+    &--view {
+        max-width: 205px;
+        display: flex;
+        margin: 0 auto;
+        a {
+            border:  1px solid #e76f51;;
+            background: transparent;
+            color: #e76f51;
+            
+          }
+      }
 }
-
-
-
-
-// .c-btn--discover{
-//                     background-color: #E76F51;
-//                     max-width: 205px;
-//                     a{
-//                         font-family: 'Roboto', sans-serif;
-//                         font-weight: 500;
-//                         font-size: 18px;
-//                         text-decoration: none;
-//                         color: #FFFFFF;
-//                     }
-//                 }
