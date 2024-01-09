@@ -70,16 +70,42 @@ h3::after {
   transition: all 1s ease;
 }
 
-.c-content .c-content__bloc {
-  background-color: #f59e9e;
-  display: flex;
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
+.p-faq__list {
+  font-weight: normal;
+  font-size: 22px;
+  margin-bottom: 10px;
+  position: relative;
 }
-.c-content .c-content__bloc a {
-  color: black;
+.p-faq__list::after {
+  content: "+";
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+}
+.p-faq__list h1 {
+  font-weight: normal;
+  font-size: 22px;
+  background-color: #ff83b8;
+  padding: 20px;
+}
+.p-faq__list h1 a {
+  display: block;
+  width: 100%;
+  color: #fff;
   text-decoration: none;
+}
+.p-faq__hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease;
+  height: 0;
+}
+.p-faq__hide.show {
+  visibility: visible;
+  opacity: 1;
+  padding: 20px;
+  font-size: 14px;
+  height: auto;
 }
 
 .c-btn {

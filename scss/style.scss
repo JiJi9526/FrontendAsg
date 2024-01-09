@@ -26,13 +26,13 @@
     gap: 8px 32px;
 }
 
-@mixin content2 {
-    background-color: #f59e9e;
-    display: flex;
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-}
+// @mixin content2 {
+//     background-color: #f59e9e;
+//     display: flex;
+//     width: 100%;
+//     padding: 10px;
+//     margin-top: 5px;
+// }
 
 h3::after {
     color: #fff;
@@ -95,16 +95,45 @@ h3::after {
     transition: all 1s ease;
 }
 
-.c-content {
-    .c-content__bloc {
-        @include content2;
-
-        a {
-            color: black;
-            text-decoration: none;
+.p-faq {
+    &__list {
+        font-weight: normal;
+        font-size: 22px;
+        margin-bottom: 10px;
+        position: relative;
+        &::after{
+            content: "+";
+            position: absolute;
+            right: 30px;
+            bottom: 40px;
+        }
+        h1 {
+            font-weight: normal;
+            font-size: 22px;
+            background-color: #ff83b8;
+            padding: 20px;
+            a{
+                display: block;
+                width: 100%;
+                color: #fff;
+                text-decoration: none;
+            }
         }
     }
+    &__hide{
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1s ease;
+        height: 0;
+        &.show{
+            visibility: visible;
+            opacity: 1;
+            padding: 20px;
+            font-size: 14px;
+            height: auto;
 
+        }
+    }
 }
 
 .c-btn {

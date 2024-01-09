@@ -66,14 +66,46 @@
             </div>
         </div>
     </div>
-    <div class="c-content">
-        <div class="c-content__bloc"><h3>FAQ</h3></div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur possimus aut, magni mollitia laborum eius reprehenderit eaque molestias tempore natus ipsa. Harum, sunt at? Necessitatibus nam placeat perspiciatis delectus aperiam.</p>
-        <div class="c-content__bloc"><h3>FAQ</h3></div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae nulla hic? Ipsum minus animi odit quae, repellat officiis amet corporis nihil similique eum repellendus excepturi ipsam, ut obcaecati culpa!</p>
-        <div class="c-content__bloc"><h3>FAQ</h3></div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae nulla hic? Ipsum minus animi odit quae, repellat officiis amet corporis nihil similique eum repellendus excepturi ipsam, ut obcaecati culpa!</p>
+    <div class="p-bloc p-bloc--faq">
+        <div class="p-faq__list">
+            <h1><a href="#">FAQ</a></h1>
+            <div class="p-faq__hide">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur possimus aut, magni mollitia laborum eius reprehenderit eaque molestias tempore natus ipsa. Harum, sunt at? Necessitatibus nam placeat perspiciatis delectus aperiam.</p>
+            </div>
+        </div>
+        <div class="p-faq__list">
+            <h1><a href="#">FAQ</a></h1>
+            <div class="p-faq__hide">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae nulla hic? Ipsum minus animi odit quae, repellat officiis amet corporis nihil similique eum repellendus excepturi ipsam, ut obcaecati culpa!</p>
+            </div>
+        </div>
+        <div class="p-faq__list">
+            <h1><a href="#">FAQ</a></h1>
+            <div class="p-faq__hide">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae nulla hic? Ipsum minus animi odit quae, repellat officiis amet corporis nihil similique eum repellendus excepturi ipsam, ut obcaecati culpa!</p>
+            </div>
+        </div>
     </div>
+    <script>
+        let newNode = document.createElement('div');
+        newNode.innerHTML = '<p>New Node</p>';
+        newNode.classList.add('newclass');
+        let selectNode = document.querySelector('.p-bloc--faq');
+      
+        let referenceNode = document.querySelectorAll('.p-faq__list')[0];
+        selectNode.insertBefore(newNode, referenceNode);
+      
+        document.querySelector('.newclass').remove();
+      
+        let faq = document.querySelectorAll('.p-faq__list');
+        let ans = document.querySelectorAll('.p-faq__hide');
+        for(let i = 0; i < faq.length; i++ ) {
+          faq[i].addEventListener('click', function(e) {
+            e.preventDefault();
+            ans[i].classList.toggle('show');
+          });
+        }
+      </script>
 </article>
     <footer>
         <address>Copy Right...</address>
